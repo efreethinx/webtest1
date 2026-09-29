@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jadwal Operasional - Kopi Kampus</title>
+    <style>
+      /* Ketentuan background texture yang sama dengan halaman utama */
+      body {
+        background-image: url("bg.jpg");
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      nav {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      /* Style untuk komponen tabel native */
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin-top: 15px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Agar teks tabel tetap terbaca di atas background texture */
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      tfoot td {
+        font-style: italic;
+        background-color: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bagian Header: Logo Konsisten di Tengah -->
+    <div style="text-align: center">
+      <img src="logo.png" alt="Logo Kopi Kampus" width="150" height="150" />
+    </div>
+
+    <!-- Sistem Navigasi Lokal (Link Relative) -->
+    <nav>
+      <a href="index.html">Beranda</a> |
+      <a href="jadwal.html">Jadwal Operasional</a>
+    </nav>
+
+    <hr />
+
+    <!-- Bagian 4: Jam Operasional (Table) -->
+    <h2>Jam Operasional Kedai</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Hari</th>
+          <th>Jam Buka</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Senin - Jumat</td>
+          <td>09.00 - 22.00</td>
+        </tr>
+        <tr>
+          <td>Sabtu - Minggu</td>
+          <td>10.00 - 24.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Format waktu dalam WIB</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Footer Hak Cipta -->
+    <p
+      style="
+        margin-top: 30px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #555;
+      "
+    >
+      Created by Dede Iyan Supardi @2026
+    </p>
+  </body>
+</html>
